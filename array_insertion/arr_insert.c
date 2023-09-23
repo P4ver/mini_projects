@@ -3,7 +3,7 @@
 int main(void)
 {   
 	int sz, ndx, d = 0, t;
-	int arr[50];
+	int arr[100];
 	
 	printf("enter the the size of the array ");
 	scanf("%d", &sz);
