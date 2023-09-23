@@ -11,7 +11,7 @@ int main(void)
 	printf("****************************************\n");
 	do
 	{
-		printf("enter the values of the array ");
+		printf("enter the values of the array arr[%d] = ", d);
 		scanf("%d", &arr[d]);
 		d++;
 	}while (d < sz);
@@ -36,7 +36,7 @@ int main(void)
 	arr[ndx] = t;
 	for (int h = 0; h <= sz; h++)
 	{
-		printf(" %d ", arr[h]);
+		printf("arr[%d] = %d \n", h, arr[h]);
 	}
 	
 	return 0;
