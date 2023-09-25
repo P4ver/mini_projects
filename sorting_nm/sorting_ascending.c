@@ -14,9 +14,9 @@ int main(void)
 		p++;
 	}
 	
-		for (int i = 0; i < p; i++)
+		for (int i = 0; i < sz; i++)
 		{
-			for (int j = i+1; j < p; j++)
+			for (int j = i+1; j < sz; j++)
 			{
 				if (arr[i] < arr[j])
 				{
