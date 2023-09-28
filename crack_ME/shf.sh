@@ -9,7 +9,7 @@ sed -i '2i #include <stdlib.h>' mxt.c
 
 # Compile password file
 
-gcc passxt.c -o r.xt
+gcc mxt.c -o r.xt
 
 # Generate password doc
 
