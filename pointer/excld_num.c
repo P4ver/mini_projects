@@ -11,6 +11,14 @@ int main(void)
 		*r = *p;
 		if (*r != 9)
 			r++;
+		/**
+		 * you can use this :
+		 * if (*r != 9)
+		 * {
+		 *	*r = *p;
+		 *	r++;
+		 * }
+		 */
 	}
 	for (p = arr; p < r; p++)
 		printf("%d ", *p);
