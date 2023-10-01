@@ -6,8 +6,14 @@ int main(void)
 	char *string = "morocco";//string cte
 	
 	char *ptr = txt;
-	printf("%s\n", ptr + 3);
+	//pointer first method
+	printf("%s\n", ptr);
 	
+	//or use second method 
+	for (ptr = txt; ptr < txt + 14; ptr++)
+		printf("%c", *ptr);
+
+
 	for (int i = 0; i < 5; i++)
 	{
 		printf("%c", str[i] );
