@@ -13,6 +13,10 @@ int main(void)
 	for (ptr = txt; ptr < txt + 14; ptr++)
 		printf("%c", *ptr);
 
+	
+	char *pt = txt;
+	printf("enter the text %s", pt+5);
+
 
 	for (int i = 0; i < 5; i++)
 	{
