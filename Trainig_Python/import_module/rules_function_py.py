@@ -1,3 +1,17 @@
+
+
+#---------------------------------------
+
+import importlib
+h = importlib.import_module('function')
+h.min(345, 99)
+
+'''
+#--------------------------------------
+fun = __import__('function')
+
+fun.max(99,13226)
+
 # improt the module with ALIAS --------
 
 import function as exp
@@ -37,3 +51,5 @@ add(15, 200)
 sous(9,2)
 div(24,4)
 mult(9,6)
+
+'''
