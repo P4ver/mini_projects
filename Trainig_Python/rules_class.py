@@ -1,25 +1,3 @@
-class person:
-    #class attribute
-    city = "morocco"
-    
-    def __init__(self, name,age):
-        self.age = age #binding attribute to object
-        self.name = name
-
-inf = person("mohammed", 30)
-
-print(getattr(person, "city"))
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -30,6 +8,69 @@ print(getattr(person, "city"))
 
 
 '''
+---------------@property---------------
+class MailBox:
+    def __init__(self, frs, lst):
+        self.__first = frs
+        self.__last = lst
+    @property
+    def mail(self):
+        return "{}.{}@gmail.com".format(self.__first, self.__last)
+    @mail.setter
+    def mail(self, name_val):
+        frs,  lst = name_val.split(' ')
+        self.__first = frs
+        self.__last = lst
+
+obj = MailBox("abdelkader", "habti")
+
+obj.mail = "khabib nurmagomedov"
+
+print(obj.mail)
+------------------@property--------------------
+#we call it as attribute not methode
+
+class Lio:
+    def __init__(self, name):
+        self.__name = name
+    @property
+    def name(self):
+        return self.__name
+    @name.setter
+    def name(self, new_name):
+        self.__name = new_name
+        
+obj = Lio(99)
+
+print(obj.name)  #99
+obj.name = "kamal"
+print(obj.name)  #kamal
+___________________________________________________
+class Far:
+    def __init__(self, name, age):
+        self.__name = name
+        self.__age = age
+    
+    def get_name(self):
+        return self.__name   
+    def set_name(self, vlr):
+        self.__name = vlr
+        
+    def get_age(self):
+        return self.__age
+    def set_age(self, val):
+        self.__age = val
+
+
+
+obj = Far("mohammed", 17)
+
+obj.set_name("abdelkader")
+
+obj.set_age(80)
+
+print(obj.get_age())
+print(obj.get_name())
 ----------------------------------------------------------
 
 #getattr(class or obj, "attribute", "value if u have new attr")
